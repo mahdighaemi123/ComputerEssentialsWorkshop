@@ -1,3 +1,5 @@
+![logo](class_logo.jpg)
+
 # Computer Essentials Workshop
 This workshop is designed for programmers seeking to grasp essential computer knowledge.
 
