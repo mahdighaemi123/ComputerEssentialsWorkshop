@@ -1,0 +1,45 @@
+Task 1
+run commands one by one
+
+------------------------------------------------------
+
+-go to desktop 
+
+cd ~
+cd Desktop
+
+------------------------------------------------------
+
+-make dir with name games 
+
+mkdir games
+
+------------------------------------------------------
+
+-go to games
+
+cd games
+
+------------------------------------------------------
+
+-make file myGame.txt 
+
+touch myGame.txt
+
+------------------------------------------------------
+
+-add x permission to user for it 
+
+chmod +x myGame.txt
+
+------------------------------------------------------
+
+-remove write,x permisstion from group 
+
+chmod g-xw myGame.txt
+
+------------------------------------------------------
+
+-add all permission to user,group,others in one command
+
+chmod 777 myGame.txt

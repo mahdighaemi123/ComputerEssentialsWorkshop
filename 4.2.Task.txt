@@ -1,0 +1,50 @@
+Task 1
+run commands one by one
+
+------------------------------------------------------
+
+-go to desktop 
+
+cd /home/user/Desktop
+
+------------------------------------------------------
+
+-make dir with name accounts
+
+mkdir accounts
+
+------------------------------------------------------
+
+-go to accounts
+
+cd accounts
+
+------------------------------------------------------
+
+-make file google.txt
+
+touch google.txt
+
+------------------------------------------------------
+
+-write account@gmail.com
+
+echo account@gmail.com > accounts.txt
+
+------------------------------------------------------
+
+-append account2@gmail.com (echo and >>)
+
+echo account2@gmail.com >> accounts.txt
+
+------------------------------------------------------
+
+-go back in desktop
+
+cd ..
+
+------------------------------------------------------
+
+-delete accounts dir
+
+rm -r accounts

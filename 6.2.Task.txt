@@ -1,0 +1,43 @@
+Tasks
+
+------------------------------------------------------
+
+1.We have theese version
+tell us what version we shoud use next.
+
+start        -> 1.0.0
+bug fix      -> 1.0.1
+new future   -> 1.1.0
+new ui       -> 2.0.0
+bux fix      -> 2.0.1
+bug fix      -> 2.0.2
+new future   -> 2.1.0
+pre-release version for public -> 2.1.0 beta
+
+------------------------------------------------------
+
+2.Create user named Ali and added to group students
+
+sudo useradd Ali
+sudo groupadd students
+sudo usermod -aG students Ali
+
+------------------------------------------------------
+
+3.Update packages (saflly)
+
+sudo apt-get update
+sudo apt-get upgrade
+
+------------------------------------------------------
+
+4.Install nodejs from reposetory
+
+sudo apt-get update
+sudo apt-get install nodejs
+
+------------------------------------------------------
+
+5.Update OS
+sudo do-rekease-upgrade
+

@@ -1,0 +1,22 @@
+Computer Essentials Workshop
+Session 2 - 2023/10/30
+CPU Vs GPU + Swap
+
+------------------------------------------------------
+
+CPU, with fewer cores, such as 4 cores, has each core very powerful.
+GPU, with more cores, like 1000 cores, has each core less powerful.
+
+When dealing with a single complex program:
+CPU > GPU in terms of performance.
+
+When handling numerous small processes:
+GPU > CPU in terms of performance.
+
+GPU is especially well-suited for image processing.
+
+------------------------------------------------------
+
+Swap:
+when we low on memory
+system use part of hard as virtual memory

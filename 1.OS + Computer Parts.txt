@@ -1,0 +1,52 @@
+Computer Essentials Workshop
+Session 1 - 2023/10/29
+OS + Computer Parts
+
+------------------------------------------------------
+
+Computer/Laptop/Server
+- Motherboard
+- RAM (Random-access memory)
+- Hard Drive (HDD or SSD)
+- Power Supply
+- Network Card (Wi-Fi, LAN)
+- Sound Card
+- Printer
+- Monitor
+- CPU (Central Processing Unit)
+- Video Card
+
+------------------------------------------------------
+
+3 Levels of Storage in a Computer
+- Hard Drive (HDD) -> Slow, cheap, non-random access
+- RAM -> Fast, expensive, random access
+- Cache -> Fastest, expensive, random access, only used for temporary storage
+
+------------------------------------------------------
+
+Types of Hard Drives in a Computer
+- HDD (Hard Disk Drive) -> Slow, cheap, typically using SATA3 interface
+- SSD (Solid-State Drive) -> Fast, expensive, typically using SATA3 interface
+- SSD M.2 (NVMe) -> Fastest, expensive, typically using a PCI Express interface
+
+------------------------------------------------------
+
+Application Execution Flow
+Applications -> Operating System (OS) -> Kernel -> Hardware
+
+------------------------------------------------------
+
+OS (Operating System)
+- Windows
+  - Windows (XP, Vista, 7, 8, 8.1, 10, 11) -> User desktop
+  - Windows Server (Windows Server 2008, 2012, 2016, 2019, 2022) (desktop/command-line versions)
+- Linux
+  - Debian
+    - Ubuntu
+    - Kali
+  - Suse
+  - RedHat
+- macOS (only Apple)
+- BSD
+- Real-Time OS (ensures no delay for running apps)

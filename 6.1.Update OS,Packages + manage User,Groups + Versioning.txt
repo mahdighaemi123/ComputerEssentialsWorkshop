@@ -1,0 +1,103 @@
+Computer Essentials Workshop
+Session 6 - 2023/11/07
+Update OS, Packages + manage User, Groups + Versioning
+
+------------------------------------------------------
+
+Versioning 
+assigning unique version numbers to unique states of computer software
+
+1.1.1
+MAJOR.MINOR.PATCH
+
+MAJOR
+- Big changes (like a new UI)
+
+MINOR
+- Small changes (like add a feature)
+
+PATCH
+- Very small changes (like a bug fix and security update)
+
+Sometimes pre-release versions are given terms like alpha, beta, release candidate.
+- they can have bugs
+
+------------------------------------------------------
+
+Two popular package manager in ubuntu
+
+1.apt-get
+2.apt (newer version of apt-get)
+
+------------------------------------------------------
+
+Install packages
+
+apt-get install nodejs
+- install from reposetory
+
+apt-get install ./path/to/file/nodejs.deb
+- install from local file
+
+------------------------------------------------------
+
+Update OS and packages
+
+1.sudo apt-get update:
+- update list of reposetories
+- only update list of whats new for packages, OS, kernel
+
+2.sudo apt-get upgrade:
+- only small update and risk free for security and bug fix packages
+- wont delete any package
+- update only X in 1.1.X
+
+3.sudo apt-get dist-upgrade
+- fully update packages and fix version conflicts between two package
+- patch update os for security and bug fix 
+
+4.sudo apt full-upgrade
+- its newer version of dist-upgrade and its using apt
+
+5.sudo do-release-upgrade
+- fully update OS (regular release ,not debug)
+
+------------------------------------------------------
+
+Users
+
+cat /etc/passwd
+- see users
+
+sudo useradd <newuser>
+- add user
+
+sudo userdel <olduser>
+- delete user
+
+sudo passwd <user>
+- change user password
+
+su - <user>
+- change current user in terminall
+
+------------------------------------------------------
+
+Groups
+
+cat /etc/group
+- get groups
+
+sudo groupadd <newgroup>
+- add group
+
+sudo groupdel <oldgroup>
+- delete group
+
+sudo usermod -aG <newgroup> <user>
+- add user to a group
+
+------------------------------------------------------
+
+sudo chown <user>:<group> <file.txt>
+- change user owner and group owner of a file

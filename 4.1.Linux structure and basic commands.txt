@@ -1,0 +1,95 @@
+Computer Essentials Workshop
+Session 4 - 2023/11/02
+Linux structure and basic commands
+
+------------------------------------------------------
+
+In Linux, we have these directories:
+
+/       -> root
+  /home -> Our users are located here
+  /etc  -> Configuration files
+  /dev  -> Connected devices
+  ...
+
+------------------------------------------------------
+
+Basic commands:
+
+cd
+Change directory
+
+ls
+List files
+-a: Argument for hidden files (files whose names start with .)
+-l: Print a detailed (long) list
+
+mv
+Rename files and directories
+
+rm
+Remove files and directories
+-f: Force deletion, and if a file is open, close it
+-r: Delete directories
+
+mkdir
+Create a directory
+
+pwd
+Show the current directory
+
+whoami
+Display the current user using the terminal
+
+history
+View the command history in the terminal
+
+echo hi > file.txt
+Write "hi" to file.txt. This command will overwrite the content of file.txt with the output of the last command.
+
+echo hi2 >> file.txt
+Append "hi2" to file.txt. This command will add "hi2" to the end of file.txt.
+
+cat
+Display the content of a file
+
+touch
+Create an empty file
+
+clear
+Clear the terminal's log and screen
+
+sudo
+Run commands as the superuser (root)
+
+------------------------------------------------------
+
+Every command in Linux can have arguments, such as -h or --help, which explain the available arguments for that command.
+
+------------------------------------------------------
+
+We have these entities in Linux:
+- Rootuser
+- Groups
+- Users
+
+------------------------------------------------------
+
+We have the Apt package manager in Linux, which allows us to install apps. For example, to install Node.js:
+sudo apt-get install nodejs
+
+------------------------------------------------------
+
+Linux supports various shell scripting languages, and you can create and run Bash scripts.
+
+------------------------------------------------------
+
+Linux has two types of addressing:
+
+- Relative: Start with ./ Or start with names like home/
+- Static: Start with / Like /home
+
+------------------------------------------------------
+
+cd ~
+is /home/<my_login_user>

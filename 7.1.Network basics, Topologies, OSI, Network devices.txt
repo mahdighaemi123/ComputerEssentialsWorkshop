@@ -1,0 +1,85 @@
+Computer Essentials Workshop
+Session 7 - 2023/11/25
+Network basics, Topologies, OSI, Network devices 
+
+------------------------------------------------------
+
+Network:
+A network is a collection of interconnected devices or points 
+allowing the sharing of information and resources through physical or wireless connections.
+
+------------------------------------------------------
+
+Topology:
+Topology refers to the arrangement or structure of how devices or nodes are interconnected within a network.
+
+------------------------------------------------------
+
+Type of topologies:
+
+Star Topology: Each device connects to a central hub or switch.
+Ring Topology: Devices form a closed-loop where data travels in a circular path.
+Tree Topology: Hierarchical connections resembling a tree structure.
+Mesh Topology: All devices interconnect to eachother (but one node not connected to all of computers)
+
+------------------------------------------------------
+
+Type of networks:
+
+1. PAN (Personal Area Network): Connects personal devices within a close range, like smartphones and laptops.
+2. LAN (Local Area Network): Links devices within a limited area such as a home, office, or building.
+3. WLAN (Wireless Local Area Network): A type of LAN using wireless technology like Wi-Fi for connections.
+4. MAN (Metropolitan Area Network): Spans across a city or metropolitan area, connecting multiple LANs.
+5. SAN (Storage Area Network): Connects storage devices to servers, facilitating centralized data storage and retrieval.
+6. WAN (Wide Area Network): Connects devices across a wide geographical area or between countries.
+7. VPN (Virtual Private Network): Enables secure communication over public networks like the internet.
+8. EPN (Enterprise Private Network): A private network used within an organization or corporation for internal communications.
+
+------------------------------------------------------
+
+IP (Internet Protocol): A protocol used for sending and receiving data across networks. It provides a unique address for devices to communicate within a network. It's divided into versions IPv4 and IPv6.
+
+------------------------------------------------------
+
+MAC Address (Media Access Control Address): A unique hardware identifier for network devices assigned by the hardware (like a network card). These addresses are typically 12- or 6-byte numbers displayed in hexadecimal format (e.g., "00:1A:2B:3C:4D:5E").
+
+------------------------------------------------------
+
+Protocol: In tech, protocols are rules guiding how devices/systems interact within a network, specifying data formats, transmission methods, and security measures.
+
+------------------------------------------------------
+
+OSi model:
+Conceptual framework for how 7 network layers works
+
+1.Application Layer
+2.Presentation Layer
+3.Session Layer
+4.Transport Layer
+5.Network Layer
+6.Data Link Layer
+7.Physical Layer
+
+------------------------------------------------------
+
+How data transfer in network:
+
+- Data encapsulate 7 times from leyer 1 to 7
+- Then trvel in network in 0,1 format
+- Finaly decapsulate from layer 7 to 1.
+
+
+------------------------------------------------------
+
+Network devices:
+
+- Modem: A device that establishes your connection to the internet.
+- Router: A device that directs data packets between networks (works with IP, it can join two networks).
+- Switch: A network device that manages communication between different devices in a network (works with MAC, it can't join two networks).
+- Hub: A simple network device that broadcasts data to all devices connected to it.
+
+------------------------------------------------------
+
+We have modem router in real life
+
+

@@ -1,0 +1,120 @@
+Computer Essentials Worksho
+Session 9 - 2023/12/02
+Git + Github + Gitlab + CI + Cd
+
+------------------------------------------------------
+
+Git:
+git is a version control system for managing changes in source code during software development and save them in locall or remote repositories.
+
+------------------------------------------------------
+
+GitHub and GitLab:
+these two are web-based platforms that provide hosting for Git repositories and offer collaboration and project management tools for software development teams.
+
+------------------------------------------------------
+
+Github publish options:
+- Public: every one can see your project
+- Private: only accepted ones can see your projects
+
+------------------------------------------------------
+
+First steps for using git:
+
+- install git app in your system for your locall repository
+- create account in github/gitlab for your remote repository
+
+------------------------------------------------------
+
+Git config:
+
+git config --global user.name "MahdiGhaemi"
+git config --global user.email "mahdighaemi123@gmail.com"
+
+------------------------------------------------------
+
+Git areas:
+
+1. Local:
+   - Working Directory: Where your code files reside and where changes are made. (go to next with "git add .")
+   - Staging Area: Where you add files you want to commit. (go to next with "git commit -m 'message'")
+   - Repository: Where commits and the complete history of changes are stored. (go to next with  "git push" )
+
+2. Remote:
+   - Remote Repository: A version of the repository hosted on a server or service like GitHub or GitLab, accessible by multiple users.
+
+------------------------------------------------------
+
+6 most usable command in git:
+
+- git init 
+setup git for prject (we run this in project folder)
+
+- git status 
+whats going on here?
+
+- git add .
+add all new files from working directory to stage area
+
+- git commit -m <message>
+add all file from stage area to local repository
+
+- git push
+send all commit from local repository to remote repository
+
+- git pull
+get lates update from remote repository and apply it to all areas
+
+------------------------------------------------------
+
+Branch in git:
+branches allow you to work on different parts of a project without impacting the main branch. When the work is complete, a branch can be merged with the main project. You can even switch between branches and work on different projects without them interfering with each other.
+
+------------------------------------------------------
+
+In big companies normaly we have 3 main branches:
+
+- production (for users)
+what users see and use
+
+- staging (for testers)
+what is testing and getting ready to publish
+
+- development (for programmers)
+what programmer currently working on and after finishing it they push it to staging for test
+
+also we have seperatet brach for each programmer
+
+------------------------------------------------------
+
+Flow of deployment for big companies:
+
+ali is a developer
+mahdi is tech lead
+
+1.Make changes in codes by developer
+ali get pull from development area -> add some changes -> ali push it codes to alis branch.
+
+2.Review new codes by tech lead
+ali request merge to development -> mahdi review merge request -> mahdi accept merge to development branch from alis branch
+
+3.Test new codes by testers
+mahdi push final codes to staging area -> tester review and fully test codes in staging -> mahdi merge new code to production from staging
+
+------------------------------------------------------
+
+CI/CD pipeline is a series of steps that software goes through from development to deployment. Here's a breakdown:
+
+Continuous Integration (CI):
+
+- Code Changes: Developers make changes to the code and push it to a central repository.
+- Automated Build and Test: As soon as code changes are pushed, an automated process begins. It includes compiling the code, running tests, and checking for errors.
+- Feedback Loop: If any issues are detected, developers are notified immediately. This loop ensures code quality is maintained and problems are caught early.
+
+Continuous Delivery/Deployment (CD):
+
+- Continuous Delivery: After passing the tests, the code is ready for deployment.
+- Deployment Automation: With Continuous Delivery, the code is prepared for deployment automatically, but the actual release is triggered manually. This ensures that the code is always deployable.
+- Continuous Deployment: In Continuous Deployment, the deployment to production is automated without human intervention. Code changes that pass all tests are automatically deployed to the production environment.
+

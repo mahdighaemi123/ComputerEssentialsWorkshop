@@ -1,0 +1,76 @@
+Computer Essentials Workshop
+Session 8 - 2023/11/27
+Network protocols
+
+------------------------------------------------------
+
+Protocol: In tech, protocols are rules guiding how devices/systems interact within a network, specifying data formats, transmission methods, and security measures.
+
+------------------------------------------------------
+
+IP (Internet Protocol): A protocol used for sending and receiving data across networks. It provides a unique address for devices to communicate within a network. It's divided into versions IPv4 and IPv6.
+
+IPv4 (Internet Protocol version 4): The fourth version of IP that uses 32-bit addresses for devices in a network. These addresses are formatted as four sections, each containing numbers from 0 to 255 (like 192.168.1.1).
+
+IPv6 (Internet Protocol version 6): The sixth version of IP designed to replace IPv4. It uses 128-bit addresses, allowing a larger number of unique device identifications across networks. (like 2001:0db8:0000:0000:0000:8a2e:0370:7334)
+
+------------------------------------------------------
+
+Ip types
+- Static: its wont change
+- Dynamic: its change base on condition defind for it
+
+------------------------------------------------------
+
+We get ip from each network we join.
+
+------------------------------------------------------
+
+Most usage ips point to:
+127.0.0.1    -> my device
+192.168.1.1  -> Tp link and DLink modems
+192.168.31.1 -> Xiaomi routers
+192.168.43.1 -> mobile hotspot
+
+------------------------------------------------------
+
+Each contry have spechial ip ranges:
+
+For iren we have:
+- 92.X.X.X
+- and lots of other ranges
+
+------------------------------------------------------
+
+Port: A port in networking is a software-defined number associated to a network protocol that receives or transmits communication for a specific service.
+
+------------------------------------------------------
+
+RDP (Remote Desktop Protocol): A protocol used to control and manage remote devices. It allows a user to connect to another computer and view/control all activities on that device. Primarily used in Windows environments.
+
+SSH (Secure Shell): A security protocol used for remote connections to devices and servers. SSH provides encrypted communication for sending/receiving commands and data, commonly utilized by server administrators.
+
+SCP (Secure Copy Protocol): Built on SSH, it enables secure file transfers between remote devices. SCP utilizes SSH's security features for encrypted file transmission.
+
+FTP (File Transfer Protocol): A protocol for transferring files between different devices in a network. FTP is a standard, non-secure method often used for file transfers within internal networks or in cases where security isn't a primary concern. (also we have SFTP and FTPS for Secure version of FTP)
+
+------------------------------------------------------
+
+SMTP (Simple Mail Transfer Protocol): A protocol used for sending emails across the internet. SMTP handles the sending, routing, and delivery of emails between email servers. It's responsible for transferring emails from the sender's email client to the recipient's email server.
+
+------------------------------------------------------
+
+HTTP (Hypertext Transfer Protocol): It's a protocol used for transmitting and receiving web pages on the internet. HTTP defines how messages are formatted and transmitted, allowing web browsers to retrieve and display content from web servers.
+
+HTTPS (Hypertext Transfer Protocol Secure): Similar to HTTP, but with an added layer of security provided by SSL/TLS encryption. It ensures that data exchanged between a web browser and a website remains encrypted and secure from potential eavesdropping or tampering.
+
+Default port in web: 80 for http and 443 for https.
+
+------------------------------------------------------
+
+WebSocket: A protocol enabling full-duplex, bidirectional communication over a single TCP connection, fostering real-time, low-latency data exchange between clients and servers.
+
+------------------------------------------------------
+
+DNS: A Domain Name System (DNS) turns domain names into IP addresses.
+

@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb_container
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root_user
+      MONGO_INITDB_ROOT_PASSWORD: root_password
+    volumes:
+      - mongodb_data:/data/db
+
+  python_app:
+    build: ./
+    container_name: python_app_container
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGO_URI=mongodb://root_user:root_password@mongodb:27017/your_db_name
+    depends_on:
+      - mongodb
+
+volumes:
+  mongodb_data:
+    driver: local

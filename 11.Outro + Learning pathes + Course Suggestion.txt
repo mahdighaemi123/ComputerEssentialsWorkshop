@@ -1,0 +1,94 @@
+Computer Essentials Workshop
+Outro
+Learning pathes + Course Suggestion
+
+------------------------------------------------------
+
+For continiue your learning i suggest this pathes
+
+------------------------------------------------------
+
+Backend developer: 
+
+bigginer level:
+- python course
+- databases (sql and nosql) course
+
+mid level:
+- network essentials
+- git
+- frameworks(django and fastapi) course
+- linux essentials
+- docker
+
+senior level:
+- data structure
+- design pattern
+- clean code
+- architecture
+- network plus
+- lpic 1
+- ci/cd 
+- tests
+
+------------------------------------------------------
+
+Frontend developer:
+
+bigginer level:
+- html/css course
+- bootstrap course
+- javascript course
+
+mid level:
+- network essentials
+- git
+- frameworks(react or next or vue) course
+
+senior level:
+- redux
+- data structure
+- design pattern
+- clean code
+- architecture
+- tests
+
+options:
+- Ui/Ux (Product Design)
+
+------------------------------------------------------
+
+Of course we have lots of other pathes like DevOps , reverse enginiering , game and mobile app , ai development ...
+
+------------------------------------------------------
+
+Course suggestion:
+
+From https://codewithmosh.com/courses:
+
+- Html/Css
+   https://codewithmosh.com/p/the-ultimate-html-css
+
+- React:
+   https://codewithmosh.com/p/ultimate-react-part1
+
+- Git:
+   https://codewithmosh.com/p/the-ultimate-git-course
+
+- Docker:
+   https://codewithmosh.com/p/the-ultimate-docker-course
+
+- Javascript:
+   https://codewithmosh.com/p/ultimate-javascript-series
+
+- Sql:
+   https://codewithmosh.com/p/complete-sql-mastery
+
+- django:
+   https://codewithmosh.com/p/the-ultimate-django-series
+
+- Python:
+   https://codewithmosh.com/p/python-programming-course-beginners
+
+- and lots of others ...
+

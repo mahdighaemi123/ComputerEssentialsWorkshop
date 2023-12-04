@@ -1,0 +1,100 @@
+Computer Essentials Workshop
+Session 5 - 2023/11/06
+Linux Permissions
+
+------------------------------------------------------
+
+In Linux, we have two entities:
+- User
+- Group
+
+Every user can be a member of multiple groups.
+Every user has one primary group.
+
+------------------------------------------------------
+
+Linux File Ownership System:
+Every file is owned by a user and a group (only one user and one group).
+
+------------------------------------------------------
+
+When a user creates a file:
+
+- User owner will be set to the user who created the file.
+- Group owner will be set to the primary group of the user owner.
+
+------------------------------------------------------
+
+Formatted Type + Permission:
+Example: `drwxrwxrwx`
+
+------------------------------------------------------
+
+File Type: The first character represents the type of the file or directory:
+
+- `-`: Denotes a regular file.
+- `d`: Denotes a directory.
+- `l`: Denotes a symbolic link.
+- `c`: Denotes a character device file.
+- `b`: Denotes a block device file.
+
+------------------------------------------------------
+
+"rwx" means:
+
+- `r` (read): Members of the group can read the file or list the directory contents.
+- `w` (write): Members of the group can modify the file or add/remove files in the directory.
+- `x` (execute): Members of the group can execute a file (for directories, this allows entering the directory).
+- `-` (hyphen): No permission for the specified operation.
+
+------------------------------------------------------
+
+Permission Parts:
+
+`(d)          + (rwx)               + (rwx)                + (rwx)`
+`(file type)` + `(user permission)` + `(group permission)` + `(others permission)`:
+
+- `rwx` first for the user.
+- `rwx` second for groups.
+- `rwx` third for others.
+
+------------------------------------------------------
+
+Adding/Removing Permissions:
+
+1. Add read permission to the file for the user (owner):
+   `chmod u+r <filename>`
+
+2. Remove write permission from the file for the group:
+   `chmod g-w <filename>`
+
+3. Add execute permission to the file for other users:
+   `chmod o+x <filename>`
+
+------------------------------------------------------
+
+Bit Model:
+
+  0     +     0     +     0
+read        write      execute
+
+- `000` -> 0 (none)
+- `001` -> 1 (execute)
+- `010` -> 2 (write)
+- `011` -> 3 (execute + write)
+- `100` -> 4 (read)
+- `101` -> 5 (execute + read)
+- `110` -> 6 (read + write)
+- `111` -> 7 (execute + write + read)
+
+- `read` => 4
+- `write` => 2
+- `execute` => 1
+
+------------------------------------------------------
+
+Changing Permissions:
+
+- `chmod 755 file`
+- `chmod 777 file`
+- `chmod 770 file`

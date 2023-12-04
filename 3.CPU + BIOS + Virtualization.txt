@@ -1,0 +1,59 @@
+Computer Essentials Workshop
+Session 3 - 2023/10/31
+CPU + BIOS + Virtualization
+
+------------------------------------------------------
+
+Each CPU has:
+- Base speed
+- Max Speed
+- 3-layer cache (more or less)
+- Core count
+- Threads per core
+
+CPU example:
+-8 processors
+-2 threads per core
+-16 logical processors
+-3.3 GHz base speed
+-5 GHz Turbo speed
+
+In my program, I should open (logical processor count) threads for the best speed.
+
+------------------------------------------------------
+
+BIOS:
+In computing, BIOS is firmware used to provide runtime services for operating systems and programs and to perform hardware initialization during the booting process.
+
+Most of our work involves:
+-In BIOS, we select boot from a drive, disk, or ISO files.
+-Enable virtualization.
+
+------------------------------------------------------
+
+What is BOOT in a PC?
+To load an operating system (OS) into the computer's main memory or RAM.
+
+------------------------------------------------------
+
+Virtualization:
+Creating something new.
+
+Simulation:
+Copy something from reality.
+
+------------------------------------------------------
+
+VM:
+Virtual machine.
+
+------------------------------------------------------
+
+OS virtualization as App:
+- VMware Workstation Pro -> Windows (desktop user)
+- Oracle VM VirtualBox -> Windows, Linux (desktop user)
+- Parallels Desktop -> Mac (desktop user)
+
+OS virtualization as OS:
+- VMware ESXi -> server edition only.
+- Qubes OS -> (Fedora-based desktop Linux)

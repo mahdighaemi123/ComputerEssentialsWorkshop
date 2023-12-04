@@ -1,0 +1,136 @@
+Computer Essentials Workshop
+Session 10 - 2023/12/04
+Docker + Dockerfile + Docker-compose
+
+------------------------------------------------------
+
+Load balancer:
+is app wich distibiute requests to multiple apps
+
+------------------------------------------------------
+
+Database:
+where we store our data
+also we have DBMS (database management system) its a app wich provide services we need
+
+------------------------------------------------------
+
+Server app:
+serve data to clients
+
+------------------------------------------------------
+
+Docker:
+Docker is a container management platform.
+
+Docker container:
+A Docker container is a isolated unit that holds everything needed to run an application. (like OS, Libs)
+
+------------------------------------------------------
+
+For example if we have these:
+
+- My-SQL as DB
+- Redis as DB
+- NginX as load balancer
+- 4 instance of our app as server
+
+We dockerize it to this:
+
+1 container for my-sql
+1 container for redis
+1 container for NginX
+4 container for server app
+
+
+This setup have these advantages:
+
+- all of our apps isolated and they have they own containers so there is no conflict between them for os, dependencies and resorces
+- we can run and stop each container seperatly
+- we can move containers very easily to new location
+- we can setup our containers just by one command for first run
+- we have more security
+
+and disadvantages:
+
+- we have lots of duplicated resorces usage like Hard disk and RAM (becase wa have multiple os here and diplicated dependencies)
+- wa have more managing to do for containers here
+
+------------------------------------------------------
+
+Dockerfile:
+
+we config our container with this file
+docker create images from this dockerfile
+and then create containers from this image
+
+------------------------------------------------------
+
+One example of 'dockerfile' file:
+
+FROM python:3.7-alpine
+
+WORKDIR /app
+EXPOSE 8000
+
+COPY . . 
+
+RUN pip install -r requirements.txt
+CMD python app.py
+
+------------------------------------------------------
+
+Dockerfile commands:
+
+Build image from docker file:
+docker build -t my-container-image .
+
+Run container from docker image:
+docker run -p 8000:8000 --name my-container -d my-container-image 
+
+------------------------------------------------------
+
+Docker compose:
+its a framework for createing multiple container and managing them more easily
+
+------------------------------------------------------
+
+One example of 'docker-compose.yml' file:
+
+version: '3.8'
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb_container
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root_user
+      MONGO_INITDB_ROOT_PASSWORD: root_password
+    volumes:
+      - mongodb_data:/data/db
+
+  python_app:
+    build: ./
+    container_name: python_app_container
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGO_URI=mongodb://root_user:root_password@mongodb:27017/your_db_name
+    depends_on:
+      - mongodb
+
+volumes:
+  mongodb_data:
+    driver: local
+
+------------------------------------------------------
+
+Docker-compose commands:
+
+- docker compose up
+its create images and containers if they dont exist
+then run them
+
+- docker compose down
+stop all containers
