@@ -1,4 +1,6 @@
-![logo](class_logo.jpg)
+<div>
+    <img src="class_logo.jpg" width="512" style="border-radius:20px"/>
+</div>
 
 # Computer Essentials Workshop
 This workshop is designed for programmers seeking to grasp essential computer knowledge.
